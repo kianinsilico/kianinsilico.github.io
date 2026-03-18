@@ -108,10 +108,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./thesis.html"> 
-<span class="menu-text">Thesis</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -132,10 +128,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#signal-peptide-prediction" id="toc-signal-peptide-prediction" class="nav-link" data-scroll-target="#signal-peptide-prediction">Signal Peptide Prediction</a></li>
   <li><a href="#dna-methylation-analysis" id="toc-dna-methylation-analysis" class="nav-link" data-scroll-target="#dna-methylation-analysis">DNA Methylation Analysis</a></li>
-  </ul></li>
-  <li><a href="#structural-bioinformatics" id="toc-structural-bioinformatics" class="nav-link" data-scroll-target="#structural-bioinformatics">Structural Bioinformatics</a>
-  <ul class="collapse">
-  <li><a href="#kunitz-domain-annotation-via-markov-models" id="toc-kunitz-domain-annotation-via-markov-models" class="nav-link" data-scroll-target="#kunitz-domain-annotation-via-markov-models">Kunitz Domain Annotation via Markov Models</a></li>
+  <li><a href="#kunitz-domain-annotation" id="toc-kunitz-domain-annotation" class="nav-link" data-scroll-target="#kunitz-domain-annotation">Kunitz Domain Annotation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -238,12 +231,37 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <hr>
 </section>
-</section>
-<section id="structural-bioinformatics" class="level2">
-<h2 class="anchored" data-anchor-id="structural-bioinformatics">Structural Bioinformatics</h2>
-<section id="kunitz-domain-annotation-via-markov-models" class="level3">
-<h3 class="anchored" data-anchor-id="kunitz-domain-annotation-via-markov-models">Kunitz Domain Annotation via Markov Models</h3>
-<p><em>Detailed write-up coming soon.</em> <em>(Focus: Classifying functional domains in protein structure-derived alignments using Hidden Markov principles.)</em></p>
+<section id="kunitz-domain-annotation" class="level3">
+<h3 class="anchored" data-anchor-id="kunitz-domain-annotation">Kunitz Domain Annotation</h3>
+<p><span class="terminal-sub">Markov Models for Functional Domain Classification</span></p>
+<p><strong>Objective:</strong> To accurately annotate Kunitz Domains within a database of protein sequences by leveraging the probabilistic power of Markov Models.</p>
+<p><strong>Biological Context:</strong> Kunitz domains are potent protease inhibitors found in various proteins (like aprotinin). Because they are small and highly conserved, they serve as excellent candidates for testing sequence-based annotation algorithms.</p>
+<p><strong>The “In Silico” Workflow:</strong></p>
+<ol type="1">
+<li><strong>Alignment &amp; Profiling</strong>
+<ul>
+<li>Utilized <strong>Structure-Derived Alignments</strong> to capture the physical reality of the protein fold.</li>
+<li>Extracted conserved residues and gaps to build a representative profile of the Kunitz fold.</li>
+</ul></li>
+<li><strong>Model Architecture</strong>
+<ul>
+<li>Implemented <strong>Markov Models</strong> to represent the transition probabilities between amino acids.</li>
+<li>Trained the model to distinguish between “Kunitz-like” sequences and background noise.</li>
+</ul></li>
+<li><strong>Classification Task</strong>
+<ul>
+<li>Scanned a database of sequences to identify and annotate potential Kunitz domains.</li>
+<li>Evaluated model performance (Sensitivity vs.&nbsp;Specificity) against known annotations.</li>
+</ul></li>
+</ol>
+<p><strong>Tech Stack:</strong></p>
+<ul>
+<li><code>Bash</code> &amp; <code>Python</code> for sequence parsing and model implementation.</li>
+<li><code>HMMER</code> / <code>Markov Principles</code> for probabilistic sequence searching.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Key Insight:</strong> Structure-derived alignments provide a superior baseline for Markov Models compared to simple sequence alignments, as they account for the 3D constraints that govern protein evolution.</p>
+</blockquote>
 
 
 </section>

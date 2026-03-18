@@ -108,3 +108,42 @@ code {
   color: #268bd2 !important; 
   font-weight: bold;
 }
+
+/* Terminal Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+  background-color: #16161e;
+}
+
+th {
+  color: #bb9af7 !important; /* Purple Headers */
+  border-bottom: 2px solid #414868;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #24283b;
+  color: #a9b1d6;
+}
+
+tr:hover {
+  background-color: #2f334d; /* Subtle highlight on hover */
+}
+
+/* CLI-style Table Borders */
+table {
+  border: 1px solid #414868 !important;
+}
+
+th {
+  background-color: #1f2335;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
