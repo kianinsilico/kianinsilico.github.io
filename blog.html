@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The In Silico Blog – The In Silico Biologist</title>
+<title>System Logs &amp; Field Notes – The In Silico Biologist</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -181,13 +181,13 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YmlvaW5mb3JtYXRpY3M=">bioinformatics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QmlvaW5mb3JtYXRpY3M=">Bioinformatics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW50ZXJuc2hpcA==">Internship <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TmV3cw==">News <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VGhlc2lz">Thesis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VW5pdmVyc2l0eQ==">University <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The In Silico Blog</h1>
+<h1 class="title">System Logs &amp; Field Notes</h1>
 </div>
 
 
@@ -204,43 +204,68 @@ window.Quarto = {
 </header>
 
 
+<p>[kian@bioinfo:~/blog]$ ls -lt –time-style=long-iso</p>
 <p>A space where I document my journey through the Master of Bioinformatics at Bologna.</p>
+<hr>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cyUyQ2Jpb2luZm9ybWF0aWNz" data-listing-date-sort="1773788400000" data-listing-file-modified-sort="1773792483083" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-<div class="thumbnail"><a href="./posts/welcome-post/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome-post/index.html" class="no-external">Hello World: The In Silico Biologist</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmlvaW5mb3JtYXRpY3M='); return false;">bioinformatics</div>
-
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="delink listing-description"><a href="./posts/welcome-post/index.html" class="no-external">
-This is my first post on my new portfolio. I’ll be documenting my Master’s journey in Bologna here.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome-post/index.html" class="no-external">
-<div class="listing-date">
-Mar 18, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Date
+</th>
+
+<th>
+Title
+</th>
+
+<th>
+Categories
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-categories="VW5pdmVyc2l0eSUyQ0ludGVybnNoaXAlMkNUaGVzaXMlMkNCaW9pbmZvcm1hdGljcyUyQ05ld3M=" data-listing-date-sort="1773788400000" data-listing-file-modified-sort="1773872339821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426" data-listing-title-sort="A Guide to Finding Supervisors" data-listing-filename-sort="finding-supervisors.qmd">
+<td>
+<span class="listing-date">Mar 18, 2026</span>
+</td>
+<td>
+<a href="./posts/welcome-post/finding-supervisors.html" class="title listing-title">A Guide to Finding Supervisors</a>
+</td>
+<td>
+<span class="listing-categories">University, Internship, Thesis, Bioinformatics, News</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="TmV3cyUyQ0Jpb2luZm9ybWF0aWNz" data-listing-date-sort="1773097200000" data-listing-file-modified-sort="1773872337340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18" data-listing-title-sort="Hello World: The In Silico Biologist" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">Mar 10, 2026</span>
+</td>
+<td>
+<a href="./posts/welcome-post/index.html" class="title listing-title">Hello World: The In Silico Biologist</a>
+</td>
+<td>
+<span class="listing-categories">News, Bioinformatics</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

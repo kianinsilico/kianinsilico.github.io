@@ -194,3 +194,53 @@ th {
   color: #f7768e !important;            /* Turn Neon Pink on hover */
   text-shadow: 0 0 10px rgba(247, 118, 142, 0.4); /* Glowing effect */
 }
+
+/* --- Blog Listing Terminal Style --- */
+.quarto-listing-table {
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.9em;
+  border: none !important;
+}
+
+.quarto-listing-table th {
+  background-color: transparent !important;
+  color: #bb9af7 !important; /* Purple headers */
+  border-bottom: 2px solid #414868 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.quarto-listing-table td {
+  border-bottom: 1px dashed #24283b !important; /* Dashed lines for terminal feel */
+  padding: 12px 5px !important;
+}
+
+/* Make the title link Cyan and Pink on hover */
+.quarto-listing-table td.listing-title a {
+  color: #7dcfff !important;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.quarto-listing-table td.listing-title a:hover {
+  color: #f7768e !important;
+}
+
+/* Style the categories to look like code tags */
+.listing-category {
+  color: #9ece6a !important; /* Neon Green */
+  border: 1px solid #414868 !important;
+  background-color: #1a1b26 !important;
+  border-radius: 2px;
+  padding: 2px 6px;
+  font-size: 0.8em;
+}
+
+/* Style the search/filter bar */
+.quarto-listing-filter {
+  background-color: #16161e;
+  border: 1px solid #414868;
+  color: #a9b1d6;
+  font-family: 'Fira Code', monospace;
+}
