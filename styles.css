@@ -46,14 +46,19 @@ a:hover {
   text-shadow: 0 0 8px rgba(247, 118, 142, 0.4); /* Subtle neon glow */
 }
 
-/* 5. Fix Quarto's Default Blog Listing Muting */
-.listing-title a {
-  color: #bb9af7 !important; /* Purple for blog titles */
-  font-weight: bold;
+/* 5. Enhanced Code Blocks for Tokyo Night */
+code {
+  background-color: #24283b; /* Deep Navy to match the theme */
+  color: #ff9e64 !important; /* Soft neon orange/amber for contrast */
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid #414868; /* Subtle border to give it depth */
 }
 
-.listing-description, .listing-date, .listing-categories .listing-category, .text-muted, .sidebar-title {
-  color: #9ece6a !important; /* Soft neon green for metadata */
+/* If you want different colors for specific sections, like 'Tech Stack' icons */
+.tech-stack-code {
+  color: #7aa2f7 !important; /* Neon Blue for tech stack items */
 }
 
 /* 6. Code Blocks */
