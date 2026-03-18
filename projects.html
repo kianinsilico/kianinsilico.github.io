@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#protein-informatics-machine-learning" id="toc-protein-informatics-machine-learning" class="nav-link active" data-scroll-target="#protein-informatics-machine-learning">Protein Informatics &amp; Machine Learning</a>
   <ul class="collapse">
-  <li><a href="#signal-peptide-prediction-statistical-models-vs.-svm" id="toc-signal-peptide-prediction-statistical-models-vs.-svm" class="nav-link" data-scroll-target="#signal-peptide-prediction-statistical-models-vs.-svm">Signal Peptide Prediction: Statistical Models vs.&nbsp;SVM</a></li>
+  <li><a href="#signal-peptide-prediction" id="toc-signal-peptide-prediction" class="nav-link" data-scroll-target="#signal-peptide-prediction">Signal Peptide Prediction</a></li>
   </ul></li>
   <li><a href="#molecular-dynamics-epigenetics" id="toc-molecular-dynamics-epigenetics" class="nav-link" data-scroll-target="#molecular-dynamics-epigenetics">Molecular Dynamics &amp; Epigenetics</a>
   <ul class="collapse">
@@ -167,30 +167,44 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="protein-informatics-machine-learning" class="level2">
 <h2 class="anchored" data-anchor-id="protein-informatics-machine-learning">Protein Informatics &amp; Machine Learning</h2>
-<section id="signal-peptide-prediction-statistical-models-vs.-svm" class="level3">
-<h3 class="anchored" data-anchor-id="signal-peptide-prediction-statistical-models-vs.-svm">Signal Peptide Prediction: Statistical Models vs.&nbsp;SVM</h3>
-<p><strong>Objective:</strong> To benchmark traditional statistical methods against machine learning algorithms for the accurate prediction of signal peptides based on sequence context.</p>
+<section id="signal-peptide-prediction" class="level3">
+<h3 class="anchored" data-anchor-id="signal-peptide-prediction">Signal Peptide Prediction</h3>
+<p><span class="terminal-sub">Statistical Models vs.&nbsp;SVM</span> <strong>Objective:</strong> To benchmark traditional statistical methods against machine learning algorithms for the accurate prediction of signal peptides based on sequence context.</p>
 <p><strong>Biological Context:</strong> Signal peptides act as crucial molecular “shipping labels” that direct proteins to their correct cellular locations. Accurately predicting these cleavage sites is essential for understanding protein localization and function.</p>
 <p><strong>Computational Approach:</strong> In this project, we compared two distinct methodologies to evaluate predictive accuracy:</p>
 <ol type="1">
 <li><strong>Statistical Baseline</strong>
 <ul>
 <li>Utilized the classical <strong>von Heijne</strong> method.</li>
-<li>Relied on weight matrices and sequence statistics to determine cleavage sites.</li>
+<li>Relied on weight matrices and sequence statistics.</li>
 </ul></li>
 <li><strong>Machine Learning (SVM)</strong>
 <ul>
-<li>Developed a <strong>Support Vector Machine</strong> classifier trained on a custom dataset.</li>
-<li><strong>Feature Engineering:</strong> * Moved beyond raw sequence strings.
+<li>Developed a <strong>Support Vector Machine</strong> classifier.</li>
+<li><strong>Feature Engineering:</strong>
 <ul>
-<li>Trained the model on <strong>context-based physiochemical features</strong>.</li>
-<li>Features included: <em>hydrophobicity</em>, <em>charge</em>, and <em>side-chain volume</em>.</li>
+<li>Moved beyond raw sequence strings.</li>
+<li>Trained on <strong>context-based physiochemical features</strong>.</li>
+<li>Included: <em>hydrophobicity</em>, <em>charge</em>, and <em>side-chain volume</em>.</li>
 </ul></li>
 </ul></li>
 </ol>
-<blockquote class="blockquote">
-<p><strong>Note:</strong> Features were extracted from amino acid sequences using a sliding-window approach to capture local sequence context. <strong>Tech Stack:</strong> * <code>Python</code> &amp; <code>Scikit-learn</code> for SVM implementation and model evaluation. * <code>Bash</code> scripting for initial data wrangling and sequence parsing. * Custom Python scripts for extracting sliding-window physiochemical features.</p>
-</blockquote>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Features were extracted from amino acid sequences using a sliding-window approach to capture local sequence context.</p>
+</div>
+</div>
+</div>
+<p><strong>Tech Stack:</strong></p>
+<ul>
+<li><code>Python</code> &amp; <code>Scikit-learn</code> for SVM implementation and model evaluation.</li>
+<li><code>Bash</code> scripting for initial data wrangling and sequence parsing.</li>
+<li><code>Custom Python scripts</code> for extracting sliding-window physiochemical features.</li>
+</ul>
 <p><strong>Future Directions:</strong> Building upon the feature-engineered SVM, a <strong>Deep Learning</strong> implementation of this classifier is currently under active development to capture more complex, non-linear sequence patterns.</p>
 <hr>
 </section>

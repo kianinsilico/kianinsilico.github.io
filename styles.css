@@ -74,3 +74,31 @@ code {
   padding: 2px 5px;
   border-radius: 4px;
 }
+
+/* --- Terminal Subtitle Style --- */
+.terminal-sub {
+  display: block;
+  color: #c0caf5 !important; /* Brighter lavender for contrast */
+  font-size: 0.9em;          /* Slightly smaller than the H3 title */
+  margin-top: -5px;          /* Pull it closer to the main title */
+  margin-left: 25px;         /* Indent it to look like a sub-command */
+  font-family: 'Fira Code', monospace;
+}
+
+.terminal-sub::before {
+  content: "↳ ";            /* Using a 'down-right' arrow for that directory-tree feel */
+  color: #bb9af7;            /* Neon Purple arrow */
+  margin-right: 5px;
+}
+
+/* Brighter Sidebar / Table of Contents */
+.sidebar nav[role=doc-toc] ul li a, 
+.toc-actions ul li a {
+  color: #7aa2f7 !important; /* Soft neon blue */
+}
+
+.sidebar nav[role=doc-toc] ul li a.active, 
+.sidebar nav[role=doc-toc] ul li a:hover {
+  color: #f7768e !important; /* Pink for active/hover */
+  border-left-color: #f7768e !important;
+}
