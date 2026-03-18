@@ -171,8 +171,26 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="signal-peptide-prediction-statistical-models-vs.-svm">Signal Peptide Prediction: Statistical Models vs.&nbsp;SVM</h3>
 <p><strong>Objective:</strong> To benchmark traditional statistical methods against machine learning algorithms for the accurate prediction of signal peptides based on sequence context.</p>
 <p><strong>Biological Context:</strong> Signal peptides act as crucial molecular “shipping labels” that direct proteins to their correct cellular locations. Accurately predicting these cleavage sites is essential for understanding protein localization and function.</p>
-<p><strong>Computational Approach:</strong> In this project, we compared two distinct methodologies: 1. <strong>Statistical Baseline:</strong> The classical <strong>von Heijne</strong> method, which relies on weight matrices and sequence statistics. 2. <strong>Machine Learning:</strong> A <strong>Support Vector Machine (SVM)</strong> classifier trained on a custom dataset. * <em>Feature Engineering:</em> Instead of relying solely on raw sequence strings, the SVM was trained on <strong>context-based physiochemical features</strong> (e.g., hydrophobicity, charge, and side-chain volume) extracted from the amino acid sequences.</p>
-<p><strong>Tech Stack:</strong> * <code>Python</code> &amp; <code>Scikit-learn</code> for SVM implementation and model evaluation. * <code>Bash</code> scripting for initial data wrangling and sequence parsing. * Custom Python scripts for extracting sliding-window physiochemical features.</p>
+<p><strong>Computational Approach:</strong> In this project, we compared two distinct methodologies to evaluate predictive accuracy:</p>
+<ol type="1">
+<li><strong>Statistical Baseline</strong>
+<ul>
+<li>Utilized the classical <strong>von Heijne</strong> method.</li>
+<li>Relied on weight matrices and sequence statistics to determine cleavage sites.</li>
+</ul></li>
+<li><strong>Machine Learning (SVM)</strong>
+<ul>
+<li>Developed a <strong>Support Vector Machine</strong> classifier trained on a custom dataset.</li>
+<li><strong>Feature Engineering:</strong> * Moved beyond raw sequence strings.
+<ul>
+<li>Trained the model on <strong>context-based physiochemical features</strong>.</li>
+<li>Features included: <em>hydrophobicity</em>, <em>charge</em>, and <em>side-chain volume</em>.</li>
+</ul></li>
+</ul></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> Features were extracted from amino acid sequences using a sliding-window approach to capture local sequence context. <strong>Tech Stack:</strong> * <code>Python</code> &amp; <code>Scikit-learn</code> for SVM implementation and model evaluation. * <code>Bash</code> scripting for initial data wrangling and sequence parsing. * Custom Python scripts for extracting sliding-window physiochemical features.</p>
+</blockquote>
 <p><strong>Future Directions:</strong> Building upon the feature-engineered SVM, a <strong>Deep Learning</strong> implementation of this classifier is currently under active development to capture more complex, non-linear sequence patterns.</p>
 <hr>
 </section>
