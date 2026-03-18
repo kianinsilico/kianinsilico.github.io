@@ -147,3 +147,50 @@ th {
   font-size: 0.8em;
   letter-spacing: 2px;
 }
+
+/* About Page Profile Image */
+.about-entity img {
+  border: 3px solid #f7768e; /* Neon Pink Border */
+  box-shadow: 0 0 15px rgba(247, 118, 142, 0.3);
+  padding: 5px;
+  background-color: #1a1b26;
+}
+/* Terminal-style Social Buttons */
+.about-links .btn {
+  background-color: #16161e !important;
+  color: #7dcfff !important; /* Cyan text */
+  border: 1px solid #7dcfff !important;
+  font-family: 'Fira Code', monospace;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  transition: all 0.3s ease;
+}
+
+.about-links .btn:hover {
+  background-color: #7dcfff !important;
+  color: #1a1b26 !important;
+  box-shadow: 0 0 10px rgba(125, 207, 255, 0.5);
+}
+
+/* --- Global Footer Styling --- */
+.nav-footer {
+  background-color: #16161e !important; /* Deepest Tokyo Night background */
+  border-top: 1px solid #414868;        /* Subtle separator line */
+  padding: 1.5rem 0;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+}
+
+.nav-footer .nav-footer-center a {
+  color: #7dcfff !important;            /* Neon Cyan links */
+  margin: 0 15px;                       /* Spacing between the links */
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.nav-footer .nav-footer-center a:hover {
+  color: #f7768e !important;            /* Turn Neon Pink on hover */
+  text-shadow: 0 0 10px rgba(247, 118, 142, 0.4); /* Glowing effect */
+}
