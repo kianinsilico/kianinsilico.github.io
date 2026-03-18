@@ -131,10 +131,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#protein-informatics-machine-learning" id="toc-protein-informatics-machine-learning" class="nav-link active" data-scroll-target="#protein-informatics-machine-learning">Protein Informatics &amp; Machine Learning</a>
   <ul class="collapse">
   <li><a href="#signal-peptide-prediction" id="toc-signal-peptide-prediction" class="nav-link" data-scroll-target="#signal-peptide-prediction">Signal Peptide Prediction</a></li>
-  </ul></li>
-  <li><a href="#molecular-dynamics-epigenetics" id="toc-molecular-dynamics-epigenetics" class="nav-link" data-scroll-target="#molecular-dynamics-epigenetics">Molecular Dynamics &amp; Epigenetics</a>
-  <ul class="collapse">
-  <li><a href="#dna-methylation-analysis-illumina-450k-array" id="toc-dna-methylation-analysis-illumina-450k-array" class="nav-link" data-scroll-target="#dna-methylation-analysis-illumina-450k-array">DNA Methylation Analysis (Illumina 450K Array)</a></li>
+  <li><a href="#dna-methylation-analysis" id="toc-dna-methylation-analysis" class="nav-link" data-scroll-target="#dna-methylation-analysis">DNA Methylation Analysis</a></li>
   </ul></li>
   <li><a href="#structural-bioinformatics" id="toc-structural-bioinformatics" class="nav-link" data-scroll-target="#structural-bioinformatics">Structural Bioinformatics</a>
   <ul class="collapse">
@@ -208,12 +205,37 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Future Directions:</strong> Building upon the feature-engineered SVM, a <strong>Deep Learning</strong> implementation of this classifier is currently under active development to capture more complex, non-linear sequence patterns.</p>
 <hr>
 </section>
-</section>
-<section id="molecular-dynamics-epigenetics" class="level2">
-<h2 class="anchored" data-anchor-id="molecular-dynamics-epigenetics">Molecular Dynamics &amp; Epigenetics</h2>
-<section id="dna-methylation-analysis-illumina-450k-array" class="level3">
-<h3 class="anchored" data-anchor-id="dna-methylation-analysis-illumina-450k-array">DNA Methylation Analysis (Illumina 450K Array)</h3>
-<p><em>Detailed write-up coming soon.</em> <em>(Focus: Identifying epigenetic signatures across sample groups using R, statistical testing, PCA, and heatmaps.)</em></p>
+<section id="dna-methylation-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="dna-methylation-analysis">DNA Methylation Analysis</h3>
+<p><span class="terminal-sub">Illumina HumanMethylation450 BeadChip (450K Array)</span></p>
+<p><strong>Objective:</strong> To identify significant epigenetic signatures and methylation patterns across distinct sample groups using high-throughput array data.</p>
+<p><strong>Biological Context:</strong> DNA methylation is a key epigenetic mechanism that regulates gene expression without altering the DNA sequence. By analyzing these patterns, we can uncover biological markers associated with specific conditions or developmental stages.</p>
+<p><strong>The “In Silico” Pipeline:</strong></p>
+<ol type="1">
+<li><strong>Data Preprocessing &amp; QC</strong>
+<ul>
+<li>Imported raw IDAT files using the <strong>minfi</strong> package in R.</li>
+<li>Conducted quality control checks and normalized data to remove technical variation.</li>
+</ul></li>
+<li><strong>Exploratory Data Analysis (EDA)</strong>
+<ul>
+<li>Performed <strong>Principal Component Analysis (PCA)</strong> to visualize global methylation differences between groups.</li>
+<li>Generated <strong>Heatmaps</strong> of the most variable CpG sites to identify clustering patterns.</li>
+</ul></li>
+<li><strong>Differential Methylation Analysis</strong>
+<ul>
+<li>Applied statistical tests to identify <strong>Differentially Methylated Positions (DMPs)</strong>.</li>
+<li>Evaluated biological significance through fold-change and p-value filtering.</li>
+</ul></li>
+</ol>
+<p><strong>Tech Stack:</strong></p>
+<ul>
+<li><code>R</code> &amp; <code>Bioconductor</code> (<strong>minfi</strong>, <strong>limma</strong>) for statistical analysis.</li>
+<li><code>ggplot2</code> &amp; <code>pheatmap</code> for high-quality biological visualizations.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Key Insight:</strong> Utilizing PCA allowed us to confirm that the primary source of variance in the dataset was indeed the biological group, validating the experimental design.</p>
+</blockquote>
 <hr>
 </section>
 </section>
