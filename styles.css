@@ -1,1 +1,65 @@
-/* css styles */
+/* Tokyo Night / Neon Japan Theme - Subtle & Readable */
+
+/* 1. Base Colors - Deep blue-purple night sky */
+body {
+  background-color: #1a1b26; 
+  color: #a9b1d6; /* Soft lavender-grey for easy reading */
+  font-family: 'Fira Code', 'Courier New', monospace;
+  line-height: 1.6;
+}
+
+/* 2. Navigation Bar - Darker contrast with a purple neon border */
+.navbar {
+  background-color: #16161e !important;
+  border-bottom: 2px solid #bb9af7; /* Soft neon purple */
+}
+
+.navbar-title, .nav-link {
+  color: #c0caf5 !important; /* Brighter lavender for nav */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 3. Headers - The Subtle Neon Pink */
+h1, h2, h3, h4, h5 {
+  color: #f7768e !important; /* Tokyo Night Pink */
+}
+
+h1::before, h2::before {
+  content: "kian@bioinfo:~$ ";
+  color: #565f89; /* Muted slate blue for the prompt */
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+/* 4. Links - Neon Cyan with a pink hover glow */
+a {
+  color: #7dcfff !important; /* Soft neon cyan */
+  text-decoration: none;
+  border-bottom: 1px dotted #7dcfff;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #f7768e !important; /* Turns pink on hover */
+  border-bottom: 1px solid #f7768e;
+  text-shadow: 0 0 8px rgba(247, 118, 142, 0.4); /* Subtle neon glow */
+}
+
+/* 5. Fix Quarto's Default Blog Listing Muting */
+.listing-title a {
+  color: #bb9af7 !important; /* Purple for blog titles */
+  font-weight: bold;
+}
+
+.listing-description, .listing-date, .listing-categories .listing-category, .text-muted, .sidebar-title {
+  color: #9ece6a !important; /* Soft neon green for metadata */
+}
+
+/* 6. Code Blocks */
+code {
+  background-color: #24283b;
+  color: #e0af68; /* Warm amber for code text */
+  padding: 2px 5px;
+  border-radius: 4px;
+}
