@@ -32,28 +32,28 @@
     "href": "projects.html",
     "title": "Projects Portfolio",
     "section": "",
-    "text": "The Problem: Identifying epigenetic signatures across different sample groups.\nThe Solution: An R-based pipeline utilizing statistical testing, PCA, and heatmap visualizations to uncover significant methylation patterns.\nTools: R, Bioconductor, ggplot2."
-  },
-  {
-    "objectID": "projects.html#molecular-dynamics-epigenetics",
-    "href": "projects.html#molecular-dynamics-epigenetics",
-    "title": "Projects Portfolio",
-    "section": "",
-    "text": "The Problem: Identifying epigenetic signatures across different sample groups.\nThe Solution: An R-based pipeline utilizing statistical testing, PCA, and heatmap visualizations to uncover significant methylation patterns.\nTools: R, Bioconductor, ggplot2."
+    "text": "Objective: To benchmark traditional statistical methods against machine learning algorithms for the accurate prediction of signal peptides based on sequence context.\nBiological Context: Signal peptides act as crucial molecular “shipping labels” that direct proteins to their correct cellular locations. Accurately predicting these cleavage sites is essential for understanding protein localization and function.\nComputational Approach: In this project, we compared two distinct methodologies: 1. Statistical Baseline: The classical von Heijne method, which relies on weight matrices and sequence statistics. 2. Machine Learning: A Support Vector Machine (SVM) classifier trained on a custom dataset. * Feature Engineering: Instead of relying solely on raw sequence strings, the SVM was trained on context-based physiochemical features (e.g., hydrophobicity, charge, and side-chain volume) extracted from the amino acid sequences.\nTech Stack: * Python & Scikit-learn for SVM implementation and model evaluation. * Bash scripting for initial data wrangling and sequence parsing. * Custom Python scripts for extracting sliding-window physiochemical features.\nFuture Directions: Building upon the feature-engineered SVM, a Deep Learning implementation of this classifier is currently under active development to capture more complex, non-linear sequence patterns."
   },
   {
     "objectID": "projects.html#protein-informatics-machine-learning",
     "href": "projects.html#protein-informatics-machine-learning",
     "title": "Projects Portfolio",
-    "section": "Protein Informatics & Machine Learning",
-    "text": "Protein Informatics & Machine Learning\n\nSignal Peptide Prediction: SVM vs. Statistical Models\n\nThe Problem: Accurately predicting signal peptides using sequence context.\nThe Solution: Benchmarked a traditional vonHeijne statistical model against a Support Vector Machine (SVM) trained on physiochemical features.\nCurrent Work: Developing a Deep Learning implementation of this classifier.\nTools: Python, Scikit-learn, Bash.\n\n\n\nKunitz Domain Annotation\n\nThe Problem: Classifying functional domains in protein structure-derived alignments.\nThe Solution: Implementation of Markov Models for sequence classification and annotation.\nTools: Python, Hidden Markov Model principles."
+    "section": "",
+    "text": "Objective: To benchmark traditional statistical methods against machine learning algorithms for the accurate prediction of signal peptides based on sequence context.\nBiological Context: Signal peptides act as crucial molecular “shipping labels” that direct proteins to their correct cellular locations. Accurately predicting these cleavage sites is essential for understanding protein localization and function.\nComputational Approach: In this project, we compared two distinct methodologies: 1. Statistical Baseline: The classical von Heijne method, which relies on weight matrices and sequence statistics. 2. Machine Learning: A Support Vector Machine (SVM) classifier trained on a custom dataset. * Feature Engineering: Instead of relying solely on raw sequence strings, the SVM was trained on context-based physiochemical features (e.g., hydrophobicity, charge, and side-chain volume) extracted from the amino acid sequences.\nTech Stack: * Python & Scikit-learn for SVM implementation and model evaluation. * Bash scripting for initial data wrangling and sequence parsing. * Custom Python scripts for extracting sliding-window physiochemical features.\nFuture Directions: Building upon the feature-engineered SVM, a Deep Learning implementation of this classifier is currently under active development to capture more complex, non-linear sequence patterns."
   },
   {
-    "objectID": "projects.html#genomic-pipelines",
-    "href": "projects.html#genomic-pipelines",
+    "objectID": "projects.html#molecular-dynamics-epigenetics",
+    "href": "projects.html#molecular-dynamics-epigenetics",
     "title": "Projects Portfolio",
-    "section": "Genomic Pipelines",
-    "text": "Genomic Pipelines\n\nNGS Data Analysis Workflow\n\nExperience: Processing raw sequencing data through quality control and alignment.\nTools: FastQC, BWA, SAMtools, Picard, IGV, Ensembl.\nWorkflow Management: Currently transitioning these tasks into automated Snakemake pipelines."
+    "section": "Molecular Dynamics & Epigenetics",
+    "text": "Molecular Dynamics & Epigenetics\n\nDNA Methylation Analysis (Illumina 450K Array)\nDetailed write-up coming soon. (Focus: Identifying epigenetic signatures across sample groups using R, statistical testing, PCA, and heatmaps.)"
+  },
+  {
+    "objectID": "projects.html#structural-bioinformatics",
+    "href": "projects.html#structural-bioinformatics",
+    "title": "Projects Portfolio",
+    "section": "Structural Bioinformatics",
+    "text": "Structural Bioinformatics\n\nKunitz Domain Annotation via Markov Models\nDetailed write-up coming soon. (Focus: Classifying functional domains in protein structure-derived alignments using Hidden Markov principles.)"
   },
   {
     "objectID": "index.html",

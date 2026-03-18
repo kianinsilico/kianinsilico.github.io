@@ -128,18 +128,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#molecular-dynamics-epigenetics" id="toc-molecular-dynamics-epigenetics" class="nav-link active" data-scroll-target="#molecular-dynamics-epigenetics">Molecular Dynamics &amp; Epigenetics</a>
+  <li><a href="#protein-informatics-machine-learning" id="toc-protein-informatics-machine-learning" class="nav-link active" data-scroll-target="#protein-informatics-machine-learning">Protein Informatics &amp; Machine Learning</a>
+  <ul class="collapse">
+  <li><a href="#signal-peptide-prediction-statistical-models-vs.-svm" id="toc-signal-peptide-prediction-statistical-models-vs.-svm" class="nav-link" data-scroll-target="#signal-peptide-prediction-statistical-models-vs.-svm">Signal Peptide Prediction: Statistical Models vs.&nbsp;SVM</a></li>
+  </ul></li>
+  <li><a href="#molecular-dynamics-epigenetics" id="toc-molecular-dynamics-epigenetics" class="nav-link" data-scroll-target="#molecular-dynamics-epigenetics">Molecular Dynamics &amp; Epigenetics</a>
   <ul class="collapse">
   <li><a href="#dna-methylation-analysis-illumina-450k-array" id="toc-dna-methylation-analysis-illumina-450k-array" class="nav-link" data-scroll-target="#dna-methylation-analysis-illumina-450k-array">DNA Methylation Analysis (Illumina 450K Array)</a></li>
   </ul></li>
-  <li><a href="#protein-informatics-machine-learning" id="toc-protein-informatics-machine-learning" class="nav-link" data-scroll-target="#protein-informatics-machine-learning">Protein Informatics &amp; Machine Learning</a>
+  <li><a href="#structural-bioinformatics" id="toc-structural-bioinformatics" class="nav-link" data-scroll-target="#structural-bioinformatics">Structural Bioinformatics</a>
   <ul class="collapse">
-  <li><a href="#signal-peptide-prediction-svm-vs.-statistical-models" id="toc-signal-peptide-prediction-svm-vs.-statistical-models" class="nav-link" data-scroll-target="#signal-peptide-prediction-svm-vs.-statistical-models">Signal Peptide Prediction: SVM vs.&nbsp;Statistical Models</a></li>
-  <li><a href="#kunitz-domain-annotation" id="toc-kunitz-domain-annotation" class="nav-link" data-scroll-target="#kunitz-domain-annotation">Kunitz Domain Annotation</a></li>
-  </ul></li>
-  <li><a href="#genomic-pipelines" id="toc-genomic-pipelines" class="nav-link" data-scroll-target="#genomic-pipelines">Genomic Pipelines</a>
-  <ul class="collapse">
-  <li><a href="#ngs-data-analysis-workflow" id="toc-ngs-data-analysis-workflow" class="nav-link" data-scroll-target="#ngs-data-analysis-workflow">NGS Data Analysis Workflow</a></li>
+  <li><a href="#kunitz-domain-annotation-via-markov-models" id="toc-kunitz-domain-annotation-via-markov-models" class="nav-link" data-scroll-target="#kunitz-domain-annotation-via-markov-models">Kunitz Domain Annotation via Markov Models</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -166,48 +165,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="protein-informatics-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="protein-informatics-machine-learning">Protein Informatics &amp; Machine Learning</h2>
+<section id="signal-peptide-prediction-statistical-models-vs.-svm" class="level3">
+<h3 class="anchored" data-anchor-id="signal-peptide-prediction-statistical-models-vs.-svm">Signal Peptide Prediction: Statistical Models vs.&nbsp;SVM</h3>
+<p><strong>Objective:</strong> To benchmark traditional statistical methods against machine learning algorithms for the accurate prediction of signal peptides based on sequence context.</p>
+<p><strong>Biological Context:</strong> Signal peptides act as crucial molecular “shipping labels” that direct proteins to their correct cellular locations. Accurately predicting these cleavage sites is essential for understanding protein localization and function.</p>
+<p><strong>Computational Approach:</strong> In this project, we compared two distinct methodologies: 1. <strong>Statistical Baseline:</strong> The classical <strong>von Heijne</strong> method, which relies on weight matrices and sequence statistics. 2. <strong>Machine Learning:</strong> A <strong>Support Vector Machine (SVM)</strong> classifier trained on a custom dataset. * <em>Feature Engineering:</em> Instead of relying solely on raw sequence strings, the SVM was trained on <strong>context-based physiochemical features</strong> (e.g., hydrophobicity, charge, and side-chain volume) extracted from the amino acid sequences.</p>
+<p><strong>Tech Stack:</strong> * <code>Python</code> &amp; <code>Scikit-learn</code> for SVM implementation and model evaluation. * <code>Bash</code> scripting for initial data wrangling and sequence parsing. * Custom Python scripts for extracting sliding-window physiochemical features.</p>
+<p><strong>Future Directions:</strong> Building upon the feature-engineered SVM, a <strong>Deep Learning</strong> implementation of this classifier is currently under active development to capture more complex, non-linear sequence patterns.</p>
+<hr>
+</section>
+</section>
 <section id="molecular-dynamics-epigenetics" class="level2">
 <h2 class="anchored" data-anchor-id="molecular-dynamics-epigenetics">Molecular Dynamics &amp; Epigenetics</h2>
 <section id="dna-methylation-analysis-illumina-450k-array" class="level3">
 <h3 class="anchored" data-anchor-id="dna-methylation-analysis-illumina-450k-array">DNA Methylation Analysis (Illumina 450K Array)</h3>
-<ul>
-<li><strong>The Problem:</strong> Identifying epigenetic signatures across different sample groups.</li>
-<li><strong>The Solution:</strong> An <strong>R-based</strong> pipeline utilizing statistical testing, PCA, and heatmap visualizations to uncover significant methylation patterns.</li>
-<li><strong>Tools:</strong> R, Bioconductor, ggplot2.</li>
-</ul>
+<p><em>Detailed write-up coming soon.</em> <em>(Focus: Identifying epigenetic signatures across sample groups using R, statistical testing, PCA, and heatmaps.)</em></p>
 <hr>
 </section>
 </section>
-<section id="protein-informatics-machine-learning" class="level2">
-<h2 class="anchored" data-anchor-id="protein-informatics-machine-learning">Protein Informatics &amp; Machine Learning</h2>
-<section id="signal-peptide-prediction-svm-vs.-statistical-models" class="level3">
-<h3 class="anchored" data-anchor-id="signal-peptide-prediction-svm-vs.-statistical-models">Signal Peptide Prediction: SVM vs.&nbsp;Statistical Models</h3>
-<ul>
-<li><strong>The Problem:</strong> Accurately predicting signal peptides using sequence context.</li>
-<li><strong>The Solution:</strong> Benchmarked a traditional <strong>vonHeijne</strong> statistical model against a <strong>Support Vector Machine (SVM)</strong> trained on physiochemical features.</li>
-<li><strong>Current Work:</strong> Developing a <strong>Deep Learning</strong> implementation of this classifier.</li>
-<li><strong>Tools:</strong> Python, Scikit-learn, Bash.</li>
-</ul>
-</section>
-<section id="kunitz-domain-annotation" class="level3">
-<h3 class="anchored" data-anchor-id="kunitz-domain-annotation">Kunitz Domain Annotation</h3>
-<ul>
-<li><strong>The Problem:</strong> Classifying functional domains in protein structure-derived alignments.</li>
-<li><strong>The Solution:</strong> Implementation of <strong>Markov Models</strong> for sequence classification and annotation.</li>
-<li><strong>Tools:</strong> Python, Hidden Markov Model principles.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="genomic-pipelines" class="level2">
-<h2 class="anchored" data-anchor-id="genomic-pipelines">Genomic Pipelines</h2>
-<section id="ngs-data-analysis-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="ngs-data-analysis-workflow">NGS Data Analysis Workflow</h3>
-<ul>
-<li><strong>Experience:</strong> Processing raw sequencing data through quality control and alignment.</li>
-<li><strong>Tools:</strong> FastQC, BWA, SAMtools, Picard, IGV, Ensembl.</li>
-<li><strong>Workflow Management:</strong> Currently transitioning these tasks into automated <strong>Snakemake</strong> pipelines.</li>
-</ul>
+<section id="structural-bioinformatics" class="level2">
+<h2 class="anchored" data-anchor-id="structural-bioinformatics">Structural Bioinformatics</h2>
+<section id="kunitz-domain-annotation-via-markov-models" class="level3">
+<h3 class="anchored" data-anchor-id="kunitz-domain-annotation-via-markov-models">Kunitz Domain Annotation via Markov Models</h3>
+<p><em>Detailed write-up coming soon.</em> <em>(Focus: Classifying functional domains in protein structure-derived alignments using Hidden Markov principles.)</em></p>
 
 
 </section>
