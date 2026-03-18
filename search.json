@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "The In Silico Blog",
+    "section": "",
+    "text": "A space where I document my journey through the Master of Bioinformatics at Bologna.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHello World: The In Silico Biologist\n\n\n\nnews\n\nbioinformatics\n\n\n\n\n\n\n\n\n\nMar 18, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "posts/welcome-post/index.html",
+    "href": "posts/welcome-post/index.html",
+    "title": "Hello World: The In Silico Biologist",
+    "section": "",
+    "text": "This is my first post on my new portfolio. I’ll be documenting my Master’s journey in Bologna here."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects Portfolio",
+    "section": "",
+    "text": "The Problem: Identifying epigenetic signatures across different sample groups.\nThe Solution: An R-based pipeline utilizing statistical testing, PCA, and heatmap visualizations to uncover significant methylation patterns.\nTools: R, Bioconductor, ggplot2."
+  },
+  {
+    "objectID": "projects.html#molecular-dynamics-epigenetics",
+    "href": "projects.html#molecular-dynamics-epigenetics",
+    "title": "Projects Portfolio",
+    "section": "",
+    "text": "The Problem: Identifying epigenetic signatures across different sample groups.\nThe Solution: An R-based pipeline utilizing statistical testing, PCA, and heatmap visualizations to uncover significant methylation patterns.\nTools: R, Bioconductor, ggplot2."
+  },
+  {
+    "objectID": "projects.html#protein-informatics-machine-learning",
+    "href": "projects.html#protein-informatics-machine-learning",
+    "title": "Projects Portfolio",
+    "section": "Protein Informatics & Machine Learning",
+    "text": "Protein Informatics & Machine Learning\n\nSignal Peptide Prediction: SVM vs. Statistical Models\n\nThe Problem: Accurately predicting signal peptides using sequence context.\nThe Solution: Benchmarked a traditional vonHeijne statistical model against a Support Vector Machine (SVM) trained on physiochemical features.\nCurrent Work: Developing a Deep Learning implementation of this classifier.\nTools: Python, Scikit-learn, Bash.\n\n\n\nKunitz Domain Annotation\n\nThe Problem: Classifying functional domains in protein structure-derived alignments.\nThe Solution: Implementation of Markov Models for sequence classification and annotation.\nTools: Python, Hidden Markov Model principles."
+  },
+  {
+    "objectID": "projects.html#genomic-pipelines",
+    "href": "projects.html#genomic-pipelines",
+    "title": "Projects Portfolio",
+    "section": "Genomic Pipelines",
+    "text": "Genomic Pipelines\n\nNGS Data Analysis Workflow\n\nExperience: Processing raw sequencing data through quality control and alignment.\nTools: FastQC, BWA, SAMtools, Picard, IGV, Ensembl.\nWorkflow Management: Currently transitioning these tasks into automated Snakemake pipelines."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The In Silico Biologist",
+    "section": "",
+    "text": "I am a second-year Master of Bioinformatics student at the University of Bologna, building upon my foundation in Biology from the University of Shiraz.\n\n\nMy work sits at the intersection of molecular biology and computational efficiency. I am currently focused on: * NGS Pipelines: Developing reproducible workflows using Snakemake. * Epigenetics: Analyzing DNA methylation patterns (450K arrays) in R. * Protein Informatics: Using Machine Learning (SVMs and Markov Models) to predict signal peptides and annotate domains.\n\nExploring biological complexity through the lens of computation."
+  },
+  {
+    "objectID": "index.html#welcome-to-my-digital-lab",
+    "href": "index.html#welcome-to-my-digital-lab",
+    "title": "The In Silico Biologist",
+    "section": "",
+    "text": "I am a second-year Master of Bioinformatics student at the University of Bologna, building upon my foundation in Biology from the University of Shiraz.\n\n\nMy work sits at the intersection of molecular biology and computational efficiency. I am currently focused on: * NGS Pipelines: Developing reproducible workflows using Snakemake. * Epigenetics: Analyzing DNA methylation patterns (450K arrays) in R. * Protein Informatics: Using Machine Learning (SVMs and Markov Models) to predict signal peptides and annotate domains.\n\nExploring biological complexity through the lens of computation."
+  }
+]
