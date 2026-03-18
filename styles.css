@@ -244,3 +244,63 @@ th {
   color: #a9b1d6;
   font-family: 'Fira Code', monospace;
 }
+/* --- Blog Filter & Search Bar --- */
+.quarto-listing-filter {
+  margin-bottom: 20px;
+}
+
+.quarto-listing-filter input {
+  background-color: #1a1b26 !important; /* Dark background */
+  color: #c0caf5 !important;            /* Light text */
+  border: 1px solid #414868 !important; /* Subtle border */
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  padding: 5px 10px;
+}
+
+.quarto-listing-filter input:focus {
+  outline: none;
+  border-color: #7aa2f7 !important;     /* Neon blue glow when typing */
+  box-shadow: 0 0 5px rgba(122, 162, 247, 0.4);
+}
+
+/* --- Blog Categories Sidebar --- */
+.quarto-listing-category-title {
+  color: #bb9af7 !important; /* Purple "Categories" header */
+  font-family: 'Fira Code', monospace;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.listing-categories .listing-category {
+  color: #7aa2f7 !important; /* Neon blue category links */
+  transition: all 0.2s ease;
+}
+
+.listing-categories .listing-category:hover, 
+.listing-categories .listing-category.active {
+  color: #f7768e !important; /* Neon pink for hover/active state */
+  font-weight: bold;
+}
+
+/* --- Table Column: Categories --- */
+.quarto-listing-table td.listing-categories {
+  color: #9ece6a !important; /* Neon Green to match your terminal theme */
+  font-size: 0.85em;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* --- Fix the Search Bar Icon Background --- */
+.quarto-listing-filter .input-group-text {
+  background-color: #1a1b26 !important; /* Matches the input background */
+  border: 1px solid #414868 !important;
+  color: #c0caf5 !important;            /* Matches the input text */
+  border-right: none !important;        /* Removes the line between icon and text */
+}
+
+/* Ensure the input field connects smoothly to the icon */
+.quarto-listing-filter input {
+  border-left: none !important;
+}

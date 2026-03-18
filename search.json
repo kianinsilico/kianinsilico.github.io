@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "System Logs & Field Notes",
     "section": "",
-    "text": "[kian@bioinfo:~/blog]$ ls -lt –time-style=long-iso\nA space where I document my journey through the Master of Bioinformatics at Bologna.\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nCategories\n\n\n\n\n\n\n\n\nMar 18, 2026\n\n\nA Guide to Finding Supervisors\n\n\nUniversity, Internship, Thesis, Bioinformatics, News\n\n\n\n\n\n\nMar 10, 2026\n\n\nHello World: The In Silico Biologist\n\n\nNews, Bioinformatics\n\n\n\n\n\n\nNo matching items"
+    "text": "A space where I document my journey through the Master of Bioinformatics at Bologna.\n[kian@bioinfo:~/blog]$ ls -lt –time-style=long-iso posts/\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nCategories\n\n\n\n\n\n\n\n\nMar 18, 2026\n\n\nA Guide to Finding Supervisors\n\n\nUniversity, Internship, Thesis, Bioinformatics, News\n\n\n\n\n\n\nMar 10, 2026\n\n\nHello World: The In Silico Biologist\n\n\nNews, Bioinformatics\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
