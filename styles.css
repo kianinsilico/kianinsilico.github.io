@@ -46,14 +46,20 @@ a:hover {
   text-shadow: 0 0 8px rgba(247, 118, 142, 0.4); /* Subtle neon glow */
 }
 
-/* 5. Enhanced Code Blocks for Tokyo Night */
+/* 5. Force High Contrast Code Pills */
 code {
-  background-color: #24283b; /* Deep Navy to match the theme */
-  color: #ff9e64 !important; /* Soft neon orange/amber for contrast */
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-weight: 500;
-  border: 1px solid #414868; /* Subtle border to give it depth */
+  background-color: #24283b !important; /* Dark Tokyo Blue */
+  color: #ff9e64 !important;            /* Bright Neon Orange */
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  border: 1px solid #414868 !important; /* Subtle border for definition */
+  font-family: 'Fira Code', monospace !important;
+  font-weight: 600 !important;          /* Make the font thicker */
+}
+
+/* Ensure that when code is inside a link, it doesn't get messed up */
+a code {
+  color: #7dcfff !important;           /* Neon Cyan if the code is a link */
 }
 
 /* If you want different colors for specific sections, like 'Tech Stack' icons */
