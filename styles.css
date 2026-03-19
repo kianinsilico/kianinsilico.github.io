@@ -320,3 +320,89 @@ th {
   text-align: justify;
   margin-bottom: 0.8em;
 }
+
+/* --- Mailing List Terminal Style --- */
+.terminal-subscribe-box {
+  background-color: #1a1b26;
+  border: 1px solid #414868;
+  padding: 20px;
+  margin: 40px 0;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+}
+
+.terminal-input {
+  background: #16161e !important;
+  border: 1px solid #414868 !important;
+  color: #c0caf5 !important;
+  padding: 8px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.terminal-button {
+  background: #7aa2f7 !important;
+  color: #16161e !important;
+  border: none;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.terminal-button:hover {
+  background: #f7768e !important; /* Neon Pink on hover */
+}
+
+/* --- Mailing List Terminal Box Fix --- */
+.terminal-subscribe-box {
+  background-color: #1a1b26;
+  border: 1px solid #414868;
+  border-left: 4px solid #7aa2f7; /* Adds a nice neon blue accent line on the left */
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+/* Align the form elements inline */
+.terminal-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+/* Force dark theme on the input box */
+.terminal-form input[type="email"] {
+  flex-grow: 1;
+  background-color: #16161e !important;
+  border: 1px solid #414868 !important;
+  color: #c0caf5 !important;
+  padding: 10px 15px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Highlight border when typing */
+.terminal-form input[type="email"]:focus {
+  border-color: #7aa2f7 !important; 
+}
+
+/* Style the submit button */
+.terminal-form input[type="submit"] {
+  background-color: #7aa2f7 !important; /* Neon Blue */
+  color: #1a1b26 !important;            /* Dark text */
+  border: none !important;
+  padding: 10px 20px;
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for the button */
+.terminal-form input[type="submit"]:hover {
+  background-color: #f7768e !important; /* Neon Pink on hover */
+}
