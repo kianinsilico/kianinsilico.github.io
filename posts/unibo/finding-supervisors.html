@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-03-18">
+<meta name="description" content="Practical advice for securing Erasmus+ traineeships and independent research stays.">
 
-<title>System Logs &amp; Field Notes – The In Silico Biologist</title>
+<title>A Guide to Finding Supervisors – The In Silico Biologist</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +28,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c90a4ae0e9a9b9e928eda10bb3d79f3e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c90a4ae0e9a9b9e928eda10bb3d79f3e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,67 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -142,7 +84,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">The In Silico Biologist</span>
     </a>
   </div>
@@ -153,19 +95,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -179,22 +121,50 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#navigating-the-internship-search" id="toc-navigating-the-internship-search" class="nav-link active" data-scroll-target="#navigating-the-internship-search">Navigating the Internship Search</a></li>
+  <li><a href="#the-time-frame" id="toc-the-time-frame" class="nav-link" data-scroll-target="#the-time-frame">1. The Time Frame</a></li>
+  <li><a href="#funding-options" id="toc-funding-options" class="nav-link" data-scroll-target="#funding-options">2. Funding Options</a></li>
+  <li><a href="#application-materials" id="toc-application-materials" class="nav-link" data-scroll-target="#application-materials">3. Application Materials</a></li>
+  <li><a href="#potential-destinations" id="toc-potential-destinations" class="nav-link" data-scroll-target="#potential-destinations">4. Potential Destinations</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">System Logs &amp; Field Notes</h1>
-</div>
+<h1 class="title">A Guide to Finding Supervisors</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">University</div>
+    <div class="quarto-category">Internship</div>
+    <div class="quarto-category">Thesis</div>
+    <div class="quarto-category">Bioinformatics</div>
+    <div class="quarto-category">News</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Practical advice for securing Erasmus+ traineeships and independent research stays.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 18, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -204,70 +174,63 @@ window.Quarto = {
 </header>
 
 
-<p>A space where I document my journey through the Master of Bioinformatics at Bologna.</p>
-<p>[kian@bioinfo:~/blog]$ ls -lt –time-style=long-iso posts/</p>
-<hr>
+<section id="navigating-the-internship-search" class="level3">
+<h3 class="anchored" data-anchor-id="navigating-the-internship-search">Navigating the Internship Search</h3>
+<p><span class="terminal-sub">Erasmus+ Traineeships and Independent Research</span></p>
+<p>Finding a laboratory and a supervisor for your thesis or research stay can feel overwhelming. This guide is designed to help bioinformatics students structure their search, prepare their applications, and identify potential destinations.</p>
+</section>
+<section id="the-time-frame" class="level3">
+<h3 class="anchored" data-anchor-id="the-time-frame">1. The Time Frame</h3>
+<p>Timing is critical when applying for research positions.</p>
+<ul>
+<li>If you plan to begin your Erasmus after the third semester, now is the right time to start.</li>
+<li>For independent research stays, you still have some time.</li>
+<li>I suggest starting your search now to become familiar with the process.</li>
+<li>However, September onward is definitely the optimal time to actively apply.</li>
+</ul>
+</section>
+<section id="funding-options" class="level3">
+<h3 class="anchored" data-anchor-id="funding-options">2. Funding Options</h3>
+<p>There are a few different pathways to fund your stay abroad:</p>
+<ul>
+<li>You can apply for funding under the standard Erasmus+ traineeship call.</li>
+<li>Alternatively, you can apply for the FaBiT scholarship specifically designed for Thesis Preparation Abroad.</li>
+<li>Sometimes, you can find independently funded lab positions, although these are naturally quite rare.</li>
+</ul>
+</section>
+<section id="application-materials" class="level3">
+<h3 class="anchored" data-anchor-id="application-materials">3. Application Materials</h3>
+<p>Before you start emailing professors, ensure your documents are prepared professionally.</p>
+<ul>
+<li>You will need an updated CV and a well-written cover letter.</li>
+<li>Try to personalize your cover letters specifically for the laboratories that are your top priorities.</li>
+<li>Mention their recent projects, published papers, or ongoing research.</li>
+<li>Explain how the specific methods they use are relevant to your own academic background and experience.</li>
+<li>This targeted approach demonstrates that you are genuinely interested and not just blindly sending automated applications.</li>
+</ul>
+</section>
+<section id="potential-destinations" class="level3">
+<h3 class="anchored" data-anchor-id="potential-destinations">4. Potential Destinations</h3>
+<p>If you are unsure where to start looking, here are a few solid strategies and institutions to consider:</p>
+<ul>
+<li>You can review the winter school webpage at <code>https://www.biocomp.unibo.it/~school20XX/</code>, replacing the “XX” with the specific year you want to check.</li>
+<li>There, you will find lists of professors who could potentially become your supervisor.</li>
+<li>These professors are a great starting point because they are already familiar with the University of Bologna and our master’s program.</li>
+<li>Keep in mind that some countries, such as France, are required by law to pay their interns.</li>
+<li>Because of this, you might be able to secure paid positions at institutions like the University of Côte d’Azur.</li>
+<li>The Pasteur Institute also publicly lists potential projects and laboratories seeking interns under the Erasmus program.</li>
+<li>They offer projects related to Bioinformatics and AI, though these mainly focus on infectious diseases.</li>
+<li>The Centre for Genomic Regulation in Barcelona occasionally offers paid positions and has previously hosted bioinformatics students from Unibo.</li>
+<li>Finally, you could look into the Rostlab at the Technische Universität München.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>System Note:</strong> This is a working document. I will extend this guide with further information and specific email templates in the future.</p>
+</blockquote>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-Date
-</th>
-
-<th>
-Title
-</th>
-
-<th>
-Categories
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="VW5pdmVyc2l0eSUyQ0ludGVybnNoaXAlMkNUaGVzaXMlMkNCaW9pbmZvcm1hdGljcyUyQ05ld3M=" data-listing-date-sort="1773788400000" data-listing-file-modified-sort="1773872339821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426" data-listing-title-sort="A Guide to Finding Supervisors" data-listing-filename-sort="finding-supervisors.qmd">
-<td>
-<span class="listing-date">Mar 18, 2026</span>
-</td>
-<td>
-<a href="./posts/unibo/finding-supervisors.html" class="title listing-title">A Guide to Finding Supervisors</a>
-</td>
-<td>
-<span class="listing-categories">University, Internship, Thesis, Bioinformatics, News</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="TmV3cyUyQ0Jpb2luZm9ybWF0aWNz" data-listing-date-sort="1773097200000" data-listing-file-modified-sort="1773872337340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18" data-listing-title-sort="Hello World: The In Silico Biologist" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Mar 10, 2026</span>
-</td>
-<td>
-<a href="./posts/welcome-post/index.html" class="title listing-title">Hello World: The In Silico Biologist</a>
-</td>
-<td>
-<span class="listing-categories">News, Bioinformatics</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
