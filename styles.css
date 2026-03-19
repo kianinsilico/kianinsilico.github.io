@@ -1,6 +1,13 @@
 /* Tokyo Night / Neon Japan Theme - Subtle & Readable */
 
 /* 1. Base Colors - Deep blue-purple night sky */
+
+p {
+  text-align: justify;
+  color: #a9b1d6; /* Standard Tokyo Night text color */
+  line-height: 1.6;
+}
+
 body {
   background-color: #1a1b26; 
   color: #a9b1d6; /* Soft lavender-grey for easy reading */
@@ -303,4 +310,13 @@ th {
 /* Ensure the input field connects smoothly to the icon */
 .quarto-listing-filter input {
   border-left: none !important;
+}
+
+/* --- Clean Terminal List Alignment --- */
+.terminal-list-item {
+  display: block;
+  padding-left: 2.5em;      /* This creates the space for the number */
+  text-indent: -2.5em;      /* This pulls ONLY the first line back to the left */
+  text-align: justify;
+  margin-bottom: 0.8em;
 }
